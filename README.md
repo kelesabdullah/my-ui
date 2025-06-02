@@ -163,7 +163,7 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 **Abdullah Keleş**
 - 🌐 Website: [Bu site!]
 - 💼 LinkedIn: [linkedin.com/in/kelesabdullah](https://www.linkedin.com/in/kelesabdullah/)
-- 🐙 GitHub: [github.com/abdullah](https://github.com)
+- 🐙 GitHub: [github.com/kelesabdullah](https://github.com/kelesabdullah)
 - 📧 Email: abdullah@example.com
 - 🏢 Şirket: [Ankasoft](https://ankasoft.co/)
 

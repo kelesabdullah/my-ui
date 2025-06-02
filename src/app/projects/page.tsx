@@ -23,7 +23,6 @@ const staggerContainer = {
 export default function ProjectsPage() {
   const [mounted, setMounted] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -92,7 +91,7 @@ export default function ProjectsPage() {
       <div className="scanlines absolute inset-0"></div>
       
       {/* Mobile Navigation */}
-      <MobileNav isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
+      <MobileNav currentPage="/projects" />
 
       {/* Navigation */}
       <nav className="sticky top-0 z-40 backdrop-blur-md bg-black/20 border-b border-cyan-500/30">
@@ -111,16 +110,6 @@ export default function ProjectsPage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute -inset-1 border border-cyan-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-            </div>
-
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-white hover:text-cyan-400 transition-colors neon-glow"
-              >
-                <Menu className="w-6 h-6" />
-              </button>
             </div>
           </div>
         </div>

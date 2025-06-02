@@ -44,7 +44,7 @@ export default function Sidebar({ currentPage = '/', onFilterChange, projectCate
         <div className="flex items-center gap-4 mb-4">
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-blue-500/30">
             <img
-              src="/images/1700993051422.png"
+              src="images/1700993051422.png"
               alt="Abdullah Keleş"
               className="w-full h-full object-cover"
             />

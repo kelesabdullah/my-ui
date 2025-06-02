@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Abdullah Keleş - DevOps Engineer & Full Stack Developer",
     description: "Passionate engineer developing scalable systems with modern technologies and DevSecOps practices",
-    url: "https://abdullahkeles.dev",
+    url: "https://kelesabdullah.com",
     siteName: "Abdullah Keleş Portfolio",
     type: "website",
   },

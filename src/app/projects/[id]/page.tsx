@@ -195,7 +195,6 @@ const projectsData = {
 
 export default function ProjectDetail() {
   const [mounted, setMounted] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const params = useParams();
   const projectId = params?.id as string;
 
@@ -229,7 +228,7 @@ export default function ProjectDetail() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white">
       {/* Mobile Navigation */}
-      <MobileNav isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
+      <MobileNav currentPage={`/projects/${projectId}`} />
 
       {/* Navigation */}
       <nav className="sticky top-0 z-40 backdrop-blur-md bg-black/20 border-b border-white/10">
@@ -250,16 +249,6 @@ export default function ProjectDetail() {
                 }`}></span>
                 <span className="text-gray-400 text-sm">{project.status}</span>
               </div>
-            </div>
-
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-white hover:text-blue-400 transition-colors"
-              >
-                <Menu className="w-6 h-6" />
-              </button>
             </div>
           </div>
         </div>

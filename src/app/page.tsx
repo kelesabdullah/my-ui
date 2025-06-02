@@ -123,7 +123,6 @@ function MouseFollower() {
 }
 
 export default function Home() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -196,24 +195,12 @@ export default function Home() {
                 </motion.a>
               ))}
             </div>
-
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-white hover:text-cyan-400 transition-colors neon-glow"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
       </nav>
 
       {/* Mobile Navigation */}
-      <MobileNav isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
+      <MobileNav currentPage="/" />
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center pt-20 px-4 relative">
@@ -725,8 +712,8 @@ export default function Home() {
                 {
                   icon: <Mail className="w-8 h-8" />,
                   title: "Email",
-                  content: "kelesabdullah@example.com",
-                  link: "mailto:kelesabdullah@example.com"
+                  content: "contact@kelesabdullah.com",
+                  link: "mailto:contact@kelesabdullah.com"
                 },
                 {
                   icon: <Linkedin className="w-8 h-8" />,
@@ -763,7 +750,7 @@ export default function Home() {
 
             <motion.div variants={fadeIn}>
               <Link
-                href="mailto:kelesabdullah@example.com"
+                href="mailto:contact@kelesabdullah.com"
                 className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transform transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
               >
                 <Mail className="w-5 h-5" />
